@@ -1,6 +1,6 @@
 import 'mocha';
-import { httpParser, analyseLogEntries } from './utils';
 import { expect } from 'chai';
+import { httpParser, analyseLogEntries } from './utils';
 
 describe('Log parser', () => {
   describe('httpParser', () => {

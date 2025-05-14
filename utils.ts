@@ -10,8 +10,7 @@ import type { LogEntry, LogStats } from './log';
 function readLogs(filePath: string) {
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
-      console.log(err);
-      throw new Error('Error reading log file');
+      console.error(`Fail to read the logs with the error: ${err}`);
     }
 
     const logEntries = parseLogFile(data);
