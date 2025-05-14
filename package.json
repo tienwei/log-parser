@@ -1,0 +1,42 @@
+{
+  "name": "log-parser",
+  "version": "1.0.0",
+  "description": "A simple http request log parser for data analysis",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-mocha ./*.test.ts",
+    "format": "prettier --write .",
+    "lint": "eslint ./*.ts --fix",
+    "build": "tsc",
+    "dev": "ts-node ./index.ts",
+    "prod": "npm run build && node dist/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "http request parser"
+  ],
+  "author": "Tien-wei Lin",
+  "license": "MIT License",
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.15.18",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "chai": "^5.2.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "mocha": "^11.2.2",
+    "prettier": "^3.5.3",
+    "ts-mocha": "^11.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
+  }
+}
